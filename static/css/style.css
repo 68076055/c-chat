@@ -3,16 +3,18 @@
    ทำให้ปรับโทนสีหรือความหนาแน่นของ UI ทีเดียวได้จากจุดเดียว และเห็นภาพรวมของ
    ดีไซน์ระบบง่ายกว่าไล่หาทีละ selector */
 :root {
-  --color-bg: #0f172a;
-  --color-surface: #111827;
-  --color-surface-alt: #1e293b;
-  --color-border: #1f2937;
-  --color-border-strong: #334155;
-  --color-text: #e2e8f0;
-  --color-text-muted: #94a3b8;
-  --color-text-faint: #64748b;
-  --color-accent: #2563eb;
-  --color-accent-hover: #1d4ed8;
+  --color-bg: #0a1210;
+  --color-surface: #0d1a14;
+  --color-surface-alt: #142418;
+  --color-border: #1a3024;
+  --color-border-strong: #244d34;
+  --color-text: #e2e8e4;
+  --color-text-muted: #90a89a;
+  --color-text-faint: #5a7a68;
+  /* ธีมเขียวอ่อน (light green) */
+  --color-accent: #22c55e;
+  --color-accent-hover: #16a34a;
+  --color-accent-light: #86efac;
   --color-danger: #b91c1c;
   --color-danger-hover: #991b1b;
 
@@ -68,12 +70,13 @@ body {
 
 .app-header h1 {
   margin: 0;
-  font-size: 1.05rem;
-  font-weight: 600;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.3;
 }
 
 .app-subtitle {
-  font-size: 0.78rem;
+  font-size: 0.82rem;
   color: var(--color-text-muted);
 }
 
@@ -118,6 +121,7 @@ body {
   font-size: 0.95rem;
   padding: 24px;
 }
+
 
 .empty-state.hidden {
   display: none;
@@ -315,6 +319,24 @@ body {
 .stop-button.hidden,
 .send-button.hidden {
   display: none;
+}
+
+.app-footer {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  padding: 8px var(--space-md) 12px;
+  border-top: 1px solid var(--color-border);
+}
+
+.app-footer strong {
+  color: var(--color-accent-light);
+  font-weight: 600;
+}
+
+.footer-id {
+  color: var(--color-accent);
+  font-weight: 500;
 }
 
 /* ---------- จอที่ใหญ่ขึ้น (แท็บเล็ต/เดสก์ท็อป) ---------- */
